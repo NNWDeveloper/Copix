@@ -127,13 +127,13 @@ namespace ClipboardManager
             listBoxHistory.SelectedIndexChanged += ListBoxHistory_SelectedIndexChanged;
 
             // Buttons
-            btnCopySelected = new Button() { Text = "Kopírovat", Location = new Point(12, 410), Size = new Size(90, 28) };
+            btnCopySelected = new Button() { Text = "Copy", Location = new Point(12, 410), Size = new Size(90, 28) };
             btnCopySelected.Click += (s, e) => CopySelected();
 
-            btnPinToggle = new Button() { Text = "Připnout / Odpřipnout", Location = new Point(110, 410), Size = new Size(140, 28) };
+            btnPinToggle = new Button() { Text = "Pin / Unpin", Location = new Point(110, 410), Size = new Size(140, 28) };
             btnPinToggle.Click += (s, e) => TogglePinSelected();
 
-            btnClear = new Button() { Text = "Vymazat vše", Location = new Point(260, 410), Size = new Size(100, 28) };
+            btnClear = new Button() { Text = "Delete all", Location = new Point(260, 410), Size = new Size(100, 28) };
             btnClear.Click += (s, e) => ClearHistory();
 
             btnExport = new Button() { Text = "Export", Location = new Point(370, 410), Size = new Size(90, 28) };
@@ -475,3 +475,4 @@ namespace ClipboardManager
         }
     }
 }
+
